@@ -35,6 +35,7 @@ import Head from 'next/head';
 import { useEffect, useRef, useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import toast from 'react-hot-toast';
+import { CHATBOT_UI_TITLE } from '@/utils/app/const';
 
 interface HomeProps {
   serverSideApiKeyIsSet: boolean;
@@ -626,8 +627,8 @@ const Home: React.FC<HomeProps> = ({
   return (
     <>
       <Head>
-        <title>Chatbot UI</title>
-        <meta name="description" content="ChatGPT but better." />
+        <title>{CHATBOT_UI_TITLE}</title>
+        <meta name="description" content="ChatGPT but better" />
         <meta
           name="viewport"
           content="height=device-height ,width=device-width, initial-scale=1, user-scalable=no"

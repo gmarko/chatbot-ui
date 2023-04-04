@@ -22,6 +22,7 @@ import { ChatMessage } from './ChatMessage';
 import { ErrorMessageDiv } from './ErrorMessageDiv';
 import { ModelSelect } from './ModelSelect';
 import { SystemPrompt } from './SystemPrompt';
+import { CHATBOT_UI_TITLE } from '@/utils/app/const';
 
 interface Props {
   conversation: Conversation;
@@ -209,7 +210,7 @@ export const Chat: FC<Props> = memo(
                           <Spinner size="16px" className="mx-auto" />
                         </div>
                       ) : (
-                        'Chatbot UI'
+                        CHATBOT_UI_TITLE
                       )}
                     </div>
 
